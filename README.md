@@ -1,2 +1,2 @@
-# AutiApp
+# PuzzleWalk
 Pervasive computing prototype
