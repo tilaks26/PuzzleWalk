@@ -215,10 +215,6 @@ public class Fragment_Overview extends Fragment implements SensorEventListener {
     @Override
     public boolean onOptionsItemSelected(final MenuItem item) {
         switch (item.getItemId()) {
-            case iu.pervasive.autiapp.R.id.action_split_count:
-                Dialog_Split.getDialog(getActivity(),
-                        total_start + Math.max(todayOffset + since_boot, 0)).show();
-                return true;
             case iu.pervasive.autiapp.R.id.action_pause:
                 SensorManager sm =
                         (SensorManager) getActivity().getSystemService(Context.SENSOR_SERVICE);

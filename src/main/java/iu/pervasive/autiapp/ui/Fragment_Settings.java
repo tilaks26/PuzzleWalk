@@ -69,41 +69,6 @@ public class Fragment_Settings extends PreferenceFragment implements OnPreferenc
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.settings);
-        findPreference("import").setOnPreferenceClickListener(this);
-        findPreference("export").setOnPreferenceClickListener(this);
-
-        findPreference("notification")
-                .setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
-                    @Override
-                    public boolean onPreferenceChange(final Preference preference,
-                                                      final Object newValue) {
-                        getActivity().getSharedPreferences("autiapp", Context.MODE_PRIVATE).edit()
-                                .putBoolean("notification", (Boolean) newValue).commit();
-
-                        getActivity().startService(new Intent(getActivity(), SensorListener.class)
-                                .putExtra(SensorListener.ACTION_UPDATE_NOTIFICATION, true));
-                        return true;
-                    }
-                });
-
-        findPreference("pause_on_power")
-                .setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
-                    @Override
-                    public boolean onPreferenceChange(final Preference preference,
-                                                      final Object newValue) {
-                        getActivity().getPackageManager().setComponentEnabledSetting(
-                                new ComponentName(getActivity(), PowerReceiver.class),
-                                ((Boolean) newValue) ?
-                                        PackageManager.COMPONENT_ENABLED_STATE_ENABLED :
-                                        PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
-                                PackageManager.DONT_KILL_APP);
-                        return true;
-                    }
-                });
-
-        Preference account = findPreference("account");
-        PlaySettingsWrapper
-                .setupAccountSetting(account, savedInstanceState, (Activity_Main) getActivity());
 
         final SharedPreferences prefs =
                 getActivity().getSharedPreferences("autiapp", Context.MODE_PRIVATE);
@@ -143,7 +108,6 @@ public class Fragment_Settings extends PreferenceFragment implements OnPreferenc
         super.onPrepareOptionsMenu(menu);
         menu.findItem(R.id.action_settings).setVisible(false);
         menu.findItem(R.id.action_pause).setVisible(false);
-        menu.findItem(R.id.action_split_count).setVisible(false);
     }
 
     @Override
