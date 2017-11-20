@@ -25,9 +25,9 @@
 
 
         <activity
-            android:name=".ui.StepperMainActivity"
+            android:name=".ui.LoginActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/AppTheme"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -87,6 +87,11 @@
         <activity
             android:name=".ui.Activity_Main"
             android:theme="@android:style/Theme.DeviceDefault.Light.DarkActionBar">
+        </activity>
+
+        <activity
+            android:name=".ui.StepperMainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <receiver android:name=".widget.Widget">
