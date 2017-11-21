@@ -20,7 +20,7 @@ public class StepperMainActivity extends progressMobileStepper {
 
     @Override
     public void onStepperCompleted() {
-        Intent mainIntent = new Intent(this, Activity_Main.class);
+        Intent mainIntent = new Intent(this, LocationActivity.class);
         startActivity(mainIntent);
     }
 

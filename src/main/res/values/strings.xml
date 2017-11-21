@@ -56,7 +56,7 @@
     <string name="split_count">Split count</string>
     <string name="pause">Pause</string>
     <string name="resume">Resume</string>
-    <string name="ispaused">Pedometer is paused</string>
+    <string name="ispaused">PuzzleWalk is paused</string>
     <string name="pause_on_power_title">Pause while charging</string>
     <string name="pause_on_power_summary">Pause Pedometer while device is charging</string>
     <string name="no_sensor">Sensor not found</string>
@@ -68,4 +68,27 @@
     <string name="location_fragment">Locate where you live so that we can recommend nearby walking areas for you</string>
     <string name="finish_fragment">Great! Choose a recommended area when you are ready. There are a few puzzles to solve each time you walk. Clues are hidden enroute. Collect them while walking and solve the puzzles. The more you solve, the higher you score</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_placeholder">Title</string>
+    <string name="news_label">About 1 mile</string>
+    <string name="sports_info_placeholder">Puzzle Difficulty: Normal</string>
+    <string name="sports_image">Sports Image</string>
+
+    <string-array name="sports_titles">
+        <item>Woodlawn</item>
+        <item>Central Park</item>
+        <item>Millers Park</item>
+    </string-array>
+
+    <string-array name="sports_info">
+        <item>Puzzle Difficulty: Normal</item>
+        <item>Puzzle Difficulty: Easy</item>
+        <item>Puzzle Difficulty: Hard</item>
+    </string-array>
+
+    <array name="sports_images">
+        <item>@drawable/img_baseball</item>
+        <item>@drawable/img_badminton</item>
+        <item>@drawable/img_basketball</item>
+    </array>
 </resources>
