@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
@@ -37,6 +38,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.eazegraph.lib.charts.BarChart;
@@ -52,6 +54,7 @@ import java.util.Locale;
 
 import iu.pervasive.autiapp.BuildConfig;
 import iu.pervasive.autiapp.Database;
+import iu.pervasive.autiapp.R;
 import iu.pervasive.autiapp.SensorListener;
 import iu.pervasive.autiapp.util.Logger;
 import iu.pervasive.autiapp.util.Util;
@@ -81,14 +84,18 @@ public class Fragment_Overview extends Fragment implements SensorEventListener {
         totalView = (TextView) v.findViewById(iu.pervasive.autiapp.R.id.total);
         averageView = (TextView) v.findViewById(iu.pervasive.autiapp.R.id.average);
 
+        Resources res = getResources(); //resource handle
+        Drawable drawable = res.getDrawable(R.drawable.sidewalk);
+        v.setBackground(drawable);
+
         pg = (PieChart) v.findViewById(iu.pervasive.autiapp.R.id.graph);
 
         // slice for the steps taken today
-        sliceCurrent = new PieModel("", 0, Color.parseColor("#99CC00"));
+        sliceCurrent = new PieModel("", 0, Color.parseColor("#4da6ff"));
         pg.addPieSlice(sliceCurrent);
 
         // slice for the "missing" steps until reaching the goal
-        sliceGoal = new PieModel("", Fragment_Settings.DEFAULT_GOAL, Color.parseColor("#CC0000"));
+        sliceGoal = new PieModel("", Fragment_Settings.DEFAULT_GOAL, Color.parseColor("#B0B0B0"));
         pg.addPieSlice(sliceGoal);
 
         pg.setOnClickListener(new OnClickListener() {
@@ -344,7 +351,7 @@ public class Fragment_Overview extends Fragment implements SensorEventListener {
             steps = current.second;
             if (steps > 0) {
                 bm = new BarModel(df.format(new Date(current.first)), 0,
-                        steps > goal ? Color.parseColor("#99CC00") : Color.parseColor("#0099cc"));
+                        steps > goal ? Color.parseColor("#00b33c") : Color.parseColor("#42d4f4"));
                 if (showSteps) {
                     bm.setValue(steps);
                 } else {
