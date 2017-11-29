@@ -92,9 +92,5 @@
         <item>@drawable/img_basketball</item>
     </array>
 
-    <array name="puzzles">
-        <item>@drawable/img_baseball</item>
-        <item>@drawable/img_badminton</item>
-        <item>@drawable/img_basketball</item>
-    </array>
+
 </resources>
