@@ -79,14 +79,13 @@ public class QuizActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int whichButton) {
                         if(optns[whichButton].equals(Answer)){
-                            // TODO: Increase Score.
                             actualScore += 5;
                             Toast.makeText(getApplicationContext(), "Correct Answer!", Toast.LENGTH_LONG).show();
                         }else {
                             actualScore -= 2;
                             Toast.makeText(getApplicationContext(), "Wrong Answer!", Toast.LENGTH_LONG).show();
                         }
-                        finish();
+                        // TODO: Dismiss the dialog once the option is selected.
                     }
                 });
     }
