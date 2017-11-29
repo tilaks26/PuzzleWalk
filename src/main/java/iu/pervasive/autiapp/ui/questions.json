@@ -1,0 +1,126 @@
+{
+  "DATA": {
+    "Questions" : [
+      {
+        "question": "Who is the president of the United States of America?",
+        "optionA": "Obama",
+        "optionB": "Trump",
+        "optionC": "Bush",
+        "optionD": "Clinton",
+        "answer": "Trump"
+      },
+      {
+        "question": "What is the capital of California?",
+        "optionA": "San Fransisco",
+        "optionB": "Los Angeles",
+        "optionC": "Sacramento",
+        "optionD": "San Jose",
+        "answer": "Sacramento"
+      },
+      {
+        "question": "Which is the largest country?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "Identify the odd one out",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "When is Christmas celebrated?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "How many planets does the solar system have?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "Which of the following is not a type of tooth?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "Which is the largest animal?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "Which of these cannot fly??",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "Which element has the symbol AU?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "2 + 3 = ?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "4 * 5 = ?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "23 - 15 = ?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "81 / 3 = ?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      },
+      {
+        "question": "14 % 4 = ?",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "answer": ""
+      }
+    ]
+  }
+}
